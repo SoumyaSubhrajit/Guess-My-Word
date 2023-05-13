@@ -13,7 +13,7 @@ const init = function () {
   lostView.addhundlerAgain(controlAgainBtn);
 };
 
-controlStartBtn = async function () {
+const controlStartBtn = async function () {
   await model.generateNewSetOfWords();
   model.generateRandomArray();
   guessView.render(model.state.hidenWord);
@@ -21,7 +21,7 @@ controlStartBtn = async function () {
   homeView.addhundlerGoHome(controlGoHome);
 };
 
-controlGuessBtn = function (arr) {
+const controlGuessBtn = function (arr) {
   if (JSON.stringify(model.state.word) === JSON.stringify(arr)) {
     if (model.state.win === 2) {
       model.updateStatus(0, 1, 3);
@@ -46,7 +46,7 @@ controlGuessBtn = function (arr) {
     guessView.addhundlerReplay(model.state.life);
   }
 };
-controlNextBtn = async function () {
+const controlNextBtn = async function () {
   if (model.state.win === 3) {
     model.updateStatus(1, -3, 0);
     await model.generateNewSetOfWords();
@@ -57,7 +57,7 @@ controlNextBtn = async function () {
   statusBarreView.render(model.state);
 };
 
-controlAgainBtn = async function () {
+const controlAgainBtn = async function () {
   model.initStatus();
   await model.generateNewSetOfWords();
   model.generateRandomArray();
@@ -66,7 +66,7 @@ controlAgainBtn = async function () {
   statusBarreView.render(model.state);
 };
 
-controlGoHome = function () {
+const controlGoHome = function () {
   model.initStatus();
   homeView.render();
   init();
