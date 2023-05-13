@@ -26,24 +26,25 @@ const generateNewSetOfWords = async function () {
   }
 };
 
+
 const generateRandomArray = function () {
   // Generate random word to guess from data
 
   state.word = Array.from(data[state.game]);
-  state.game = state.game + 1;
-
+  state.game += 1;
+  console.log(state.word);
   // Generate random index depending of lvl
   const randomArr = randomGeneratorLvl(state.word.length, state.lvl);
-
+  console.log(randomArr);
   state.hidenWord = state.word.map((el, i) =>
     randomArr.some((el) => el === i) ? " " : el
   );
 };
 
 const updateStatus = function (incLvl, incWin, incLife) {
-  state.lvl = state.lvl + incLvl;
-  state.life = state.life + incLife;
-  state.win = state.win + incWin;
+  state.lvl += incLvl;
+  state.life += incLife;
+  state.win += incWin;
 };
 
 const initStatus = function () {
@@ -62,16 +63,26 @@ const randomGenerator = function (max) {
 };
 
 const randomGeneratorLvl = function (max, lvl = 1) {
-  const lvlCorrected = lvl < max - 2 ? lvl : max - 2;
-  const arr = [];
-  for (let i = 0; i < max; i++) {
-    arr.push(i);
-  }
-  const arrSplit = arr;
-  while (arrSplit.length > lvlCorrected) {
-    const rdm = randomGenerator(arrSplit.length);
-    arrSplit.splice(rdm, 1);
-  }
+  /////////// PREVIOUS CODE /////////////////
+
+  // const lvlCorrected = lvl < max - 2 ? lvl : max - 2;
+  // const arr = [];
+  // for (let i = 0; i < max; i++) {
+  //   arr.push(i);
+  // }
+
+  /////////// UPDATED CODE /////////////////
+  let arrSplit = [];
+  arrSplit.push(randomGenerator(max));
+  console.log(typeof arrSplit);
+
+  /////////// PREVIOUS CODE /////////////////
+
+  // while (arrSplit.length > lvlCorrected) {
+  //   const rdm = randomGenerator(arrSplit.length);
+  //   arrSplit.splice(rdm, 1);
+  // }
+
   return arrSplit;
 };
 
