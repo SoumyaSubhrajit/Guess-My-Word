@@ -30,7 +30,6 @@ const generateRandomArray = function () {
   // Generate random word to guess from data
 
   state.word = Array.from(data[state.game]);
-  console.log(state.word);
   state.game = state.game + 1;
 
   // Generate random index depending of lvl

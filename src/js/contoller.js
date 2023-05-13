@@ -7,7 +7,6 @@ import statusBarreView from "./view/statusBarreView";
 import homeView from "./view/HomeView";
 
 const init = function () {
-  console.log("hello");
   guessView.addhundlerStart(controlStartBtn);
   guessView.addhundlerGuess(controlGuessBtn);
   winView.addhundlerNext(controlNextBtn);

@@ -44,7 +44,6 @@ class GuessView extends View {
     this._btnStart.addEventListener(
       "click",
       async function (e) {
-        console.log("hi");
         await hundler();
         this._btnStart.classList.add("hidden");
         this._btnGuess.classList.remove("hidden");
