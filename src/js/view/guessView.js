@@ -7,7 +7,6 @@ class GuessView extends View {
   _errorMessage = "We have a problem loading data reload the page";
 
   guessTheme() {
-    console.log("hello");
     document.querySelector(".primary--title").innerText =
       "GUESS MY WORD KETTY !";
     document.documentElement.style.setProperty("--backgrountcolor", "#868e96");

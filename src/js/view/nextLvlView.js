@@ -5,7 +5,6 @@ class NextLvlView extends View {
   _data;
 
   nextLvlTheme() {
-    console.log("hello");
     document.querySelector(".primary--title").innerHTML =
       "you get 3 more lifes !<br>Ready for the next lvl ! ";
     document.documentElement.style.setProperty("--backgrountcolor", "#9c36b5");
