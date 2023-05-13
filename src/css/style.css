@@ -1,0 +1,139 @@
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 45vh;
+  border-bottom: 10px solid var(--separetionBorder);
+}
+
+.primary--title {
+  font-size: 5.4rem;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.5;
+  color: #343a40;
+}
+.abs-text {
+  position: absolute;
+  top: 10%;
+  left: 3%;
+  gap: 8rem;
+  display: flex;
+
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  color: #343a40;
+}
+
+.ketty-img {
+  width: 20rem;
+  transform: translateY(50%);
+  overflow: hidden;
+  border-radius: 50%;
+  border: 10px solid var(--separetionBorder);
+  position: absolute;
+  bottom: 0%;
+
+  transition: all 0.3s;
+  overflow: hidden;
+}
+.ketty-img:hover {
+  transform: scale(110%) translateY(40%);
+}
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.main {
+  padding-top: 15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  align-items: center;
+  height: 55vh;
+}
+.word-to-guess-box {
+  display: flex;
+
+  gap: 1.8rem;
+}
+
+.letter-box {
+  list-style: none;
+}
+.letter-to-guess {
+  text-transform: uppercase;
+  font-size: 3.6rem;
+  font-family: inherit;
+  text-align: center;
+  color: inherit;
+  width: 10rem;
+  height: 10rem;
+  background-color: var(--boxColor);
+  border-radius: 50%;
+  border: 5px solid var(--borderGuessTin);
+  transition: all 0.3s;
+}
+.letter-to-guess:hover {
+  transform: translateY(-1rem);
+}
+/*linear-gradient(to right bottom, #f8f0fc, #fff3bf);*/
+.letter-helper {
+  text-transform: uppercase;
+  font-size: 3.6rem;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background-color: var(--boxColor);
+  border: 5px solid var(--fontColor);
+}
+.btn--large {
+  background-image: linear-gradient(
+    to right bottom,
+    var(--borderLargeTin),
+    var(--borderLargeShade)
+  );
+  width: 40rem;
+  height: 7.5rem;
+}
+.btn--again {
+  background-image: linear-gradient(
+    to right bottom,
+    var(--btnLostTin),
+    var(--btnLostShade)
+  );
+  border: 5px solid var(--fontColor);
+  width: 22rem;
+  height: 7.5rem;
+}
+.btn--next {
+  background-image: linear-gradient(
+    to right bottom,
+    var(--btnWinTin),
+    var(--borderWin)
+  );
+  border: 5px solid var(--fontColor);
+  width: 22rem;
+  height: 7.5rem;
+}
+.btn--home {
+  background-image: linear-gradient(
+    to right bottom,
+    var(--borderLargeTin),
+    var(--borderLargeShade)
+  );
+  position: absolute;
+  bottom: 5%;
+  left: 3%;
+  width: 33rem;
+  height: 7.5rem;
+}

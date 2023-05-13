@@ -1,0 +1,22 @@
+{
+  "name": "guessmyword",
+  "version": "1.0.0",
+  "description": "Guess my word game",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html -dist-dir ./dist"
+  },
+  "author": "Ag yassir",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.8.3"
+  },
+  "dependencies": {
+    "parcel-plugin-static-files-copy": "^2.6.0"
+  },
+  "staticFiles": {
+    "staticPath": "./img",
+    "watcherGlob": "**"
+  }
+}

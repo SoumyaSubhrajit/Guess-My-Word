@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Press Start 2P", sans-serif;
+}
+
+body {
+  background-image: linear-gradient(
+    to right bottom,
+    var(--borderGuessShade),
+    var(--backgrountcolor)
+  );
+  /*background-image: linear-gradient(
+    to right bottom,
+    var(--backgrountcolorWinTin),
+    var(--backgrountcolorWinShade)
+  );*/
+  color: var(--fontColor);
+}
+.hidden {
+  display: none;
+}
+.btn {
+  border-radius: 10rem;
+  border: none;
+  font-size: 2.2rem;
+  font-family: inherit;
+  color: inherit;
+  transition: all 0.3s;
+}
+.btn:hover {
+  transform: translateY(-5px);
+}
+
+.error-message {
+  font-size: 2.2rem;
+  font-family: inherit;
+  color: inherit;
+}

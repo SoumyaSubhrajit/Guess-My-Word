@@ -1,0 +1,17 @@
+:root {
+  --backgrountcolor: #868e96; /*#5c940d*/
+  --backgrountcolorWinTin: #d8f5a2;
+  --backgrountcolorWinShade: #5c940d;
+  --fontColor: #343a40;
+  --borderGuessTin: #f8f0fc;
+  --borderGuessShade: #ced4da;
+  --boxColor: #adb5bd; /*#e9fac8*/
+  --boxColorWin: #e9fac8;
+  --separetionBorder: #ced4da; /*#5c940d*/
+  --btnWinTin: #94d82d;
+  --borderWin: #5c940d; /*also --btnWinShade*/
+  --btnLostTin: #ffa8a8;
+  --btnLostShade: #fa5252;
+  --borderLargeTin: #e8e3eb;
+  --borderLargeShade: #dcdbd7;
+}
