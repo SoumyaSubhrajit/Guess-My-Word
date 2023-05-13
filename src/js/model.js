@@ -70,18 +70,16 @@ const randomGeneratorLvl = function (max, lvl = 1) {
   //   arr.push(i);
   // }
 
-  /////////// UPDATED CODE /////////////////
-  let arrSplit = [];
-  arrSplit.push(randomGenerator(max));
-  console.log(typeof arrSplit);
-
-  /////////// PREVIOUS CODE /////////////////
-
   // while (arrSplit.length > lvlCorrected) {
   //   const rdm = randomGenerator(arrSplit.length);
   //   arrSplit.splice(rdm, 1);
   // }
 
+
+  /////////// UPDATED CODE /////////////////
+  let arrSplit = [];
+  arrSplit.push(randomGenerator(max));
+  console.log(typeof arrSplit);
   return arrSplit;
 };
 
