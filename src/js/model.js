@@ -30,14 +30,13 @@ const generateNewSetOfWords = async function () {
 const generateRandomArray = function () {
   // Generate random word to guess from data
 
-  state.word = Array.from(data[state.game]);
-  state.game += 1;
+  state.word = Array.from(data[state.game++]);
   console.log(state.word);
   // Generate random index depending of lvl
   const randomArr = randomGeneratorLvl(state.word.length, state.lvl);
   console.log(randomArr);
   state.hidenWord = state.word.map((el, i) =>
-    randomArr.some((el) => el === i) ? " " : el
+    randomArr.includes(i) ? " " : el
   );
 };
 
