@@ -1,3 +1,2 @@
 # Guess-My-Word
-this is a fanny game, that i develep for fun. you have to guess the hidden letter to have the right word.
-it is still under develepement
+This is a funny game, that I develop for fun. You have to guess the hidden letter to have the right word. It is still under development
