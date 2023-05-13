@@ -1,5 +1,7 @@
 import View from "./view";
-import image from "url:../../img/Ketty.jpg";
+import Kettyimage from "url:../../img/Ketty.jpg";
+import KettyHeartimage from "url:../../img/KettyHeatEyesColor.jpg";
+import KettyGlassimage from "url:../../img/KettyGlassEyesColor.jpg";
 class HomeView extends View {
   _parentElement = document.querySelector("body");
 
@@ -11,19 +13,19 @@ class HomeView extends View {
       <img
         class="ketty-img"
         id="kettyImage"
-        src="${image}"
+        src="${Kettyimage}"
         alt="Katty"
       />
       <img
         class="ketty-img hidden"
         id="kettyImageHeartColor"
-        src="/src/img/KettyHeatEyesColor.jpg"
+        src="${KettyHeartimage}"
         alt="Katty"
       />
       <img
         class="ketty-img hidden"
         id="kettyImageGlassColor"
-        src="/src/img/KettyGlassEyesColor.jpg"
+        src="${KettyGlassimage}"
         alt="Katty"
       />
     </header>
